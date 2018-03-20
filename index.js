@@ -12,6 +12,7 @@ function destructivelyUpdateObjectWithKeyAndValue (object, key, value) {
 }
 
 function deleteFromObjectByKey (object, key) {
+//create a copy of the object and delete a key from that object without actually changing the original object
   let object2 = Object.assign ({}, object)
   delete object2[key]
   return object2
