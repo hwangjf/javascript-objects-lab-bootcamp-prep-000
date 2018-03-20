@@ -16,6 +16,7 @@ function deleteFromObjectByKey (object, key) {
 }
 
 function destructivelyDeleteFromObjectByKey (object, key) {
+//this function is able to delete the key from the object and return the modified and new version of the object
   delete object[key]
   return object
 }
